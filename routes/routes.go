@@ -11,5 +11,6 @@ func GetRoutes(router *gin.Engine) *gin.Engine {
 	noPrefixRoutes := router.Group("/")
 	authRoutes(noPrefixRoutes)
 	userRoutes(noPrefixRoutes)
+	chatRoutes(noPrefixRoutes)
 	return router
 }
